@@ -1,0 +1,1 @@
+# Clean.DDD.Architecture
