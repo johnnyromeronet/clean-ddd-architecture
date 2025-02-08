@@ -64,7 +64,7 @@ Clean.DDD.Architecture/
 Este es un proyecto en evolución. Si quieres aportar mejoras, puedes indicarmelo en los **comentarios de YouTube**.
 
 ## 📜 Licencia
-Este proyecto está licenciado bajo la **MIT License** - consulta el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está licenciado bajo la **MIT License** - consulta el archivo [LICENSE](https://github.com/johnnyromeronet/clean-ddd-architecture/blob/master/LICENSE.txt) para más detalles.
 
 ---
 
