@@ -56,5 +56,17 @@ namespace Clean.DDD.Architecture.Infrastructure.Registration
         }
 
         #endregion
+
+        #region Swagger
+
+        public static string SwaggerEnabled
+        {
+            get
+            {
+                return Config != null ? Config["Swagger:Enabled"]! : string.Empty;
+            }
+        }
+
+        #endregion
     }
 }

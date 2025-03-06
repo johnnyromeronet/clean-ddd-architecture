@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<swagger>
+	<tag name="health-check">
+		<response code="200">Operation executed successfully.</response>
+		<response code="500">Server unable to process the request.</response>
+		<response code="503">Server unavailable.</response>
+	</tag>
+	<tag name="get-all">
+		<response code="200">Operation executed successfully.</response>
+		<response code="401">Authorization denied.</response>
+		<response code="403">Access to the resource is forbidden.</response>
+		<response code="500">Server unable to process the request.</response>
+		<response code="503">Server unavailable.</response>
+	</tag>
+	<tag name="get-by-id">
+		<response code="200">Operation executed successfully.</response>
+		<response code="401">Authorization denied.</response>
+		<response code="403">Access to the resource is forbidden.</response>
+		<response code="404">Item not found.</response>
+		<response code="500">Server unable to process the request.</response>
+		<response code="503">Server unavailable.</response>
+	</tag>
+	<tag name="post-basic">
+		<response code="200">Operation executed successfully.</response>
+		<response code="400">Bad request.</response>
+		<response code="401">Authorization denied.</response>
+		<response code="403">Access to the resource is forbidden.</response>
+		<response code="500">Server unable to process the request.</response>
+		<response code="503">Server unavailable.</response>
+	</tag>
+	<tag name="put-delete-basic">
+		<response code="200">Operation executed successfully.</response>
+		<response code="400">Bad request.</response>
+		<response code="401">Authorization denied.</response>
+		<response code="403">Access to the resource is forbidden.</response>
+		<response code="404">Item not found.</response>
+		<response code="500">Server unable to process the request.</response>
+		<response code="503">Server unavailable.</response>
+	</tag>
+</swagger>

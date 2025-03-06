@@ -1,0 +1,56 @@
+﻿body {
+    background-color: #FFFFFF;
+}
+
+.swagger-ui .topbar {
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .15);
+}
+
+.swagger-ui .topbar-wrapper svg {
+    display: none;
+}
+
+.swagger-ui .topbar-wrapper::before {
+    content: url('/images/logo.png');
+    height: 40px;
+}
+
+.swagger-ui .info {
+    margin: 20px 0;
+}
+
+.swagger-ui .scheme-container {
+    padding: 15px 0;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+.swagger-ui .btn.authorize,
+.swagger-ui .btn {
+    border-color: #B9EAFF;
+    color: #B9EAFF;
+}
+
+.swagger-ui .auth-btn-wrapper .btn-done,
+.swagger-ui .btn.cancel {
+    border-color: #FFB3B4 !important;
+    color: #FFB3B4 !important;
+}
+
+.swagger-ui .btn.authorize svg {
+    fill: #B9EAFF;
+}
+
+.swagger-ui .topbar .download-url-wrapper .select-label {
+    color: #3b4151;
+}
+
+    .swagger-ui .topbar .download-url-wrapper .select-label select,
+    .swagger-ui .response-control-media-type--accept-controlelr select {
+        border-color: #3b4151;
+    }
+
+.swagger-ui .info .title small.version-stamp {
+    background-color: #B6FFCD;
+}
