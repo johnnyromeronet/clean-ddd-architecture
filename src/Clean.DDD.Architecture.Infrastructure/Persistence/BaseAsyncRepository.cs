@@ -120,7 +120,7 @@ namespace Clean.DDD.Architecture.Infrastructure.Persistence
                         OperatorEnum.NotIn => $"{flt.PropertyName} NOT IN ({paramName})",
                         OperatorEnum.IsNull => $"{flt.PropertyName} IS NULL",
                         OperatorEnum.IsNotNull => $"{flt.PropertyName} IS NOT NULL",
-                        _ => throw new BadRequestException("La operación indicada no está definida."),
+                        _ => throw new BadRequestException("The indicated operation is not defined."),
                     };
                 }
             }
@@ -193,12 +193,12 @@ namespace Clean.DDD.Architecture.Infrastructure.Persistence
                 await _context.SaveChangesAsync();
             }
 
-            return await Task.FromResult(new ResponseModel()
+            return new()
             {
                 Id = entity.Id,
-                Message = "La creación se ha realizado correctamente.",
+                Message = "The creation was successful.",
                 Success = true
-            });
+            };
         }
 
         public async Task<ResponseModel> UpdateAsync(T entity, bool save = true)
@@ -211,12 +211,12 @@ namespace Clean.DDD.Architecture.Infrastructure.Persistence
                 await _context.SaveChangesAsync();
             }
 
-            return await Task.FromResult(new ResponseModel()
+            return new()
             {
                 Id = entity.Id,
-                Message = "La actualización se ha realizado correctamente.",
+                Message = "The update was successful.",
                 Success = true
-            });
+            };
         }
 
         public async Task<ResponseModel> DeleteAsync(T entity, bool save = true, bool logical = true)
@@ -236,12 +236,12 @@ namespace Clean.DDD.Architecture.Infrastructure.Persistence
                 await _context.SaveChangesAsync();
             }
 
-            return await Task.FromResult(new ResponseModel()
+            return new()
             {
                 Id = entity.Id,
-                Message = "El borrado se ha realizado correctamente.",
+                Message = "The deletion was successful.",
                 Success = true
-            });
+            };
         }
 
         public async Task<ResponseModel> RollbackAsync()
@@ -265,7 +265,7 @@ namespace Clean.DDD.Architecture.Infrastructure.Persistence
 
             return await Task.FromResult(new ResponseModel()
             {
-                Message = "El rollback se ha realizado correctamente.",
+                Message = "The rollback was successful.",
                 Success = true
             });
         }
